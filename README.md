@@ -25,15 +25,13 @@ The key features are:
 
 
 Dependencies
-----------
+------------
 The tools require a properly configured and working ckan4j-war 
 
 Contribute
 ----------
-The tool is pretty stable as it has been extensivelly tested and used for www.opendatahub.it and other CKAN based portals
-an issue on GitHub
-You can collaborate with [code](https://github.com/sciamlab/ckan4j/pulls) or
-[ideas and bugs](https://github.com/sciamlab/ckan4j/issues)
+The tool is pretty stable as it has been extensivelly tested and used for www.opendatahub.it and other CKAN based catalogs. If you spot any issue please report on [ideas and bugs](https://github.com/sciamlab/ckan-multilingual-translator/issues)
+
 
 
 License

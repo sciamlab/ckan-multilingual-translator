@@ -19,14 +19,14 @@ The key features are:
 * filtering capability by translation status or by keyword
 * easily usable by persons with translation skills only.
 * completelly decoupled from CKAN
-* ckan4j-war authorization based on CKAN API Keys
+* authorization based on CKAN API Keys (via ckan4j-war)
 * easy customizable
 * super easy deployment
 
 
 Dependencies
 ------------
-The tools require a properly configured and working ckan4j-war 
+The tools require a properly configured and working [ckan4j-war](http://github.com/sciamlab/ckan4j-war) that provide the appropriate translation RESTfull services for a given CKAN instance
 
 Contribute
 ----------

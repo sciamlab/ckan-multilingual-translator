@@ -19,7 +19,7 @@ The key features are:
 * filtering capability by translation status or by keyword
 * easily usable by persons with translation skills only.
 * completelly decoupled from CKAN
-* authorization based on CKAN API Keys (via ckan4j-war)
+* authorization based on CKAN API Keys (via ckan4j-webapi)
 * easy customizable
 * super easy deployment
 

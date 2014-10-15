@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Bootstrap based CKAN Multilingual translator tool</title>
+	<title>Bootstrap 3 based CKAN Multilingual translator tool</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -16,7 +16,7 @@
 			<div class="col-xs-8">
 		
 				<div class="panel panel-default">
-					<div class="panel-heading">Bootstrap based CKAN Multilingual translator tool</div>
+					<div class="panel-heading">Bootstrap 3 based CKAN Multilingual translator tool</div>
 					<ul class="list-group">
 						<li class="list-group-item">
 							<form class="navbar-form" role="search" onsubmit='return false;'>
@@ -39,7 +39,7 @@
 							</form>
 						</li>
 						<li class="list-group-item">
-							<div style="float:left;"><h3>Found <b><span id="terms-count"></span></b> terms</h3></div>
+							<div style="float:left;"><h3 style="margin: 10px 0 10px 15px;">Found <b><span id="terms-count"></span></b> terms</h3></div>
 							<div id="filter-box" style="float:left;"></div>
 							<br style="clear:both;" />
 						</li>
@@ -74,10 +74,16 @@
 						<p>Use the form below to create or edit a translation</p>
 					</div>
 					<ul class="list-group">
+						<li class="list-group-item" >
+							<div class="form-group">
+								<label for="term">CKAN API key:</label>
+								<input id="api-key" type="text" class="form-control" placeholder="Paste here your CKAN api key" style="margin-top: 5px;">
+							</div>
+						</li>
 						<li class="list-group-item">
 							<div class="form-group">
 								<label for="term">Original text:</label>
-								<p id="term" style="color:grey">Select a text to be translated</p>
+								<p id="term" style="color:grey;margin-top: 5px;">Select a text to be translated</p>
 								<span id="row-num" style="display:none;"></span>
 							</div>
 						</li>
@@ -85,7 +91,7 @@
 							<form role="form" onsubmit='return false;'>
 								<div class="form-group">
 									<label for="term-translation">Translated text:</label>
-									<textarea class="form-control" id="term-translation" style="resize: vertical;"
+									<textarea class="form-control" id="term-translation" style="resize: vertical;margin-top: 5px;"
 										placeholder="Provide a translation for the selected term" rows="5"></textarea>
 								</div>
 								<button type="submit" class="btn btn-default" onclick="insertTranslation();">Save</button>

@@ -1,5 +1,5 @@
-var host = 'http://example.com';
-var ckan4j_webapi_endpoint = host + '/ckan4j-webapi/translate/term/';
+var host = 'http://my.domain.com';
+var ckan4j_webapi_endpoint = host + '/ckan4j/webapi/translate/term/';
 var page_size = 25;
 var page_current;
 var page_last;
@@ -192,11 +192,11 @@ function insertTranslation(){
 	data['term'] = term;
 	data['term_translation'] = term_translation;
 	data['lang_code'] = lang_code_current;
-	data['t'] = '969b36f8-6300-4c04-b2e5-a9855bc5a2c2';
+	data['t'] = document.getElementById("api-key").value;
 	var service = 'insert';
 	doAjax('POST', ckan4j_webapi_endpoint, service, '', JSON.stringify(data), true,
 		function(result){
-	//    	alert(result);
+//	    	alert(result);
 			var json = eval('(' + result + ')');
 			var message_box = document.getElementById("message-box");
 			var message;
@@ -209,10 +209,12 @@ function insertTranslation(){
 				"Translation successfully saved" +
 				"</div>";
 			}else{
+				var msg = "Error saving translation"; 
+				if(json.msg)
+					msg += ": "+json.msg;
 				message = "<div id='message' class='alert alert-danger alert-dismissible' role='alert'>" +
 				"<button type='button' class='close' data-dismiss='alert'><span aria-hidden='true'>&times;</span><span class='sr-only'>Close</span></button>" +
-				"Error saving translation" +
-				"</div>";
+				msg + "</div>";
 			}
 			window.setTimeout(function() {
 			    $("#message").fadeTo(500, 0).slideUp(500, function(){

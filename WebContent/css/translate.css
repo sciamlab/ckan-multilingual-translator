@@ -1,5 +1,5 @@
 body {
-	margin-top: 20px;
+
 }
 
 .container{
@@ -23,7 +23,4 @@ form.navbar-form > div, form.navbar-form > button{
 }
 .div-inline {
 	display: inline-block;
-}
-body > .container{
-	padding-top: 60px;
 }

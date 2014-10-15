@@ -1,0 +1,30 @@
+body {
+	margin-top: 20px;
+}
+
+.container{
+	width: 1170px;
+}
+
+.affix {
+	width: 19%;
+}
+
+body > div.container > div.row > div.col-xs-8 > div > ul > li > form > div.form-group{
+	width: 50%;
+}
+form.navbar-form > div, form.navbar-form > button{
+	margin-right: 10px;
+}
+.pagination > li{
+	cursor: pointer;
+}
+.pagination{
+	margin-top: 0;
+}
+h3{
+	margin: 10px 0 10px 15px;
+}
+.div-inline {
+	display: inline-block;
+}

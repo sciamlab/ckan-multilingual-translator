@@ -36,6 +36,7 @@ function onLoad(){
 	document.getElementById("dropdownLanguageButton").innerHTML = langs[lang_code_current]["display_"+lang_code_main]+' <span class="caret"></span>';
 	document.getElementById("mainLang").innerHTML = langs[lang_code_main]["display_"+lang_code_main];
 	document.getElementById("translatedLang").innerHTML = langs[lang_code_current]["display_"+lang_code_main];
+//	document.getElementById("api-endpoint").value = ckan4j_webapi_endpoint;
 	search();
 }
 
@@ -62,6 +63,7 @@ function search(){
 	term.style.color = "grey";
 	document.getElementById("term-translation").value = "";
 	page_current = 1;
+	ckan4j_webapi_endpoint = document.getElementById("api-endpoint").value;
 	populateTable();
 }
 function resetSearch(){

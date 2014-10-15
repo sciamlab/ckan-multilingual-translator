@@ -9,9 +9,8 @@ body {
 .affix {
 	width: 19%;
 }
-
-body > div.container > div.row > div.col-xs-8 > div > ul > li > form > div.form-group{
-	width: 50%;
+.navbar-default {
+	background-color: #cacaca;
 }
 form.navbar-form > div, form.navbar-form > button{
 	margin-right: 10px;
@@ -24,4 +23,7 @@ form.navbar-form > div, form.navbar-form > button{
 }
 .div-inline {
 	display: inline-block;
+}
+body > .container{
+	padding-top: 60px;
 }

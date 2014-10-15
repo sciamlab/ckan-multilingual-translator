@@ -26,7 +26,7 @@ The key features are:
 
 Dependencies
 ------------
-The tools require a properly configured and working [ckan4j-war](http://github.com/sciamlab/ckan4j-war) that provide the appropriate translation RESTfull services for a given CKAN instance
+The tools require a properly configured and working [ckan4j-webapi](http://github.com/sciamlab/ckan4j-webapi) that provide the appropriate translation WebAPI services for a given CKAN instance
 
 Contribute
 ----------

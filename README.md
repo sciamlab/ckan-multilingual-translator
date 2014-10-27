@@ -8,11 +8,9 @@ Intro
 If you are using the CKAN [multilingual extension](http://docs.ckan.org/en/latest/maintaining/multilingual.html) you 
 will probably require this tool as it will provide a nicer and quick interface to maintain localizations for the many strings that typically require translations.
 
-
 Features
 --------
 The tool is a Single Page Application (SPA) as show in the quite self explicative screen:
-
 
 The key features are:
 * quick access and translate labels and strings of Datasets, Resources, Groups/Organizations, Tags and Dataset Extra fields
@@ -23,6 +21,7 @@ The key features are:
 * easy customizable
 * super easy deployment
 
+You can access the live demo [here](http://sciamlab.github.io/ckan-multilingual-translator)
 
 Dependencies
 ------------
@@ -31,8 +30,6 @@ The tools require a properly configured and working [ckan4j-webapi](http://githu
 Contribute
 ----------
 The tool is pretty stable as it has been extensivelly tested and used for www.opendatahub.it and other CKAN based catalogs. If you spot any issue please report on [ideas and bugs](https://github.com/sciamlab/ckan-multilingual-translator/issues)
-
-
 
 License
 -------

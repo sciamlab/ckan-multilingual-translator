@@ -21,7 +21,7 @@ The key features are:
 * easy customizable
 * super easy deployment
 
-You can access the live demo [here](http://sciamlab.github.io/ckan-multilingual-translator)
+You can access the live demo [here](http://github.sciamlab.com/ckan-multilingual-translator)
 
 Dependencies
 ------------

@@ -251,6 +251,7 @@ function doAjax(method, host, service, query, data, asynch, callback){
         };
         requestObj.open(method, host+service+'?'+query, asynch);
         requestObj.setRequestHeader("Content-type","application/json");
+        requestObj.setRequestHeader("Authorization",document.getElementById("api-key").innerHTML);
         requestObj.send(data);
     }
 }

@@ -47,6 +47,8 @@ function enter(e){
 
 function search(){
 	var query = document.getElementById("search-filter").value;
+	alert(document.getElementById("api-key").innerHTML);
+        
 	if(query!=''){
 		var filter_box = document.getElementById("filter-box");
 		filter_box.innerHTML = "<div id='filter' class='alert alert-info alert-dismissible' role='alert' " +
@@ -251,7 +253,6 @@ function doAjax(method, host, service, query, data, asynch, callback){
         };
         requestObj.open(method, host+service+'?'+query, asynch);
         requestObj.setRequestHeader("Content-type","application/json");
-        alert(document.getElementById("api-key").innerHTML);
         requestObj.setRequestHeader("Authorization",document.getElementById("api-key").innerHTML);
         requestObj.send(data);
     }

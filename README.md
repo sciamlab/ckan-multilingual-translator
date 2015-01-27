@@ -2,6 +2,7 @@ ckan-multilingual-translator
 ============================
 
 Bootstrap based CKAN multilingual translator SPA tool
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/sciamlab/ckan-multilingual-translator/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
 Intro
 -----------------------

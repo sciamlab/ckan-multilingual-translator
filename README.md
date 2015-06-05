@@ -27,7 +27,9 @@ You can access the live demo [here](http://github.sciamlab.com/ckan-multilingual
 Dependencies
 ------------
 The tools require a properly configured and working [ckan4j-webapi](http://github.com/sciamlab/ckan4j-webapi) that provide the appropriate translation WebAPI services for a given CKAN instance.
+
 As test you can use the endpoint: http://beta.sciamlab.com:8080/ckan4j/webapi/translate/term/
+
 Since the apikey for that endpoint is not provided you cannot update any term 
 
 Contribute

@@ -1,4 +1,4 @@
-var host = 'http://my.domain.com';
+var host = 'http://beta.sciamlab.com:8080';
 var ckan4j_webapi_endpoint = host + '/ckan4j/webapi/translate/term/';
 var page_size = 25;
 var page_current;
@@ -251,6 +251,7 @@ function doAjax(method, host, service, query, data, asynch, callback){
         };
         requestObj.open(method, host+service+'?'+query, asynch);
         requestObj.setRequestHeader("Content-type","application/json");
+        requestObj.setRequestHeader("Authorization",document.getElementById("api-key").innerHTML);
         requestObj.send(data);
     }
 }

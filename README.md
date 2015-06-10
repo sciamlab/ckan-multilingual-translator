@@ -1,7 +1,9 @@
 ckan-multilingual-translator
 ============================
 
-Bootstrap based CKAN multilingual translator SPA tool
+Bootstrap based CKAN multilingual translator Single Page Application tool
+
+![translator_screen](https://raw.githubusercontent.com/sciamlab/ckan-multilingual-translator/img/ckan-multilingual-translator.png)
 
 Intro
 -----------------------
